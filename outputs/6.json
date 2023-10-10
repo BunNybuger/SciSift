@@ -1,0 +1,24 @@
+{
+    "Article name": "Generic compliance of industrial PPE by using deep learning techniques",
+    "Citation": "(Vukicevic et al., 2022)",
+    "Year of the article": 2022,
+    "DOI": "https://doi.org/10.1016/j.ssci.2021.105646",
+    "Brief summary": "The paper proposes a 4-step procedure to automate compliance of personal protective equipment (PPE) in industrial settings using deep learning. It detects workers using pose estimation, defines regions of interest (ROI) for different PPE types, and classifies the ROIs as compliant or not. The approach is evaluated on 18 PPE types protecting different body parts, achieving 95% accuracy with MobileNetV2. It demonstrates improved performance and flexibility compared to prior work.",
+    "What is detected in this paper?": "Compliance of 18 different types of personal protective equipment (PPE).",
+    "Detected object hashtag": {
+    "PPE": ["Face mask", "Respiratory mask", "Earmuffs", "Welding mask", "Face shields", "Safety glasses", "Hardhat", "Head cover", "Yellow vests", "Visibility tracks", "Exam gloves", "Industry gloves", "Sandals", "Industry shoes", "Boots", "Feet covers", "Protective cloth"],
+    "Body parts": ["Respiratory system", "Hearing system", "Face", "Eyes", "Head", "Upper body", "Hands", "Feet", "Whole body"]
+    },
+    "Method and the technology employed in the paper for detection": "Uses HigherHRNet pose estimator to detect workers and define regions of interest (ROI) for different PPE types. Classifies each ROI with deep learning classifiers (MobileNetV2, DenseNet, ResNet etc.) to determine PPE compliance.",
+    "Primary focus": "#vision",
+    "Other technologies or tools used": ["HigherHRNet pose estimator", "MobileNetV2", "DenseNet", "ResNet", "PyTorch"],
+    "Method of measuring performance": "Accuracy, Precision, Recall, F1 Score",
+    "Achieved performance": "95% overall accuracy with MobileNetV2",
+    "Key points and the value of the research": "Proposes flexible 4-step procedure to automate compliance checking for diverse PPE types protecting different body parts. Shows improved accuracy over prior detection-based approaches. Demonstrates modularity and ability to easily adapt for new PPE types.",
+    "Suggestions or recommendations for future research": "Address effects like occlusion and low image quality. Analyze video instead of single frames. Expand to more PPE varieties and industries.",
+    "Limitations": "Privacy constraints and computational costs limit applicability for whole-facility 24/7 monitoring. Performance may vary for less common PPE types.",
+    "Dataset": "Combined web-mined images and public PPE datasets (Roboflow hardhat train data and Pictor PPE data). After cropping ROIs, datasets of 400-8460 images per PPE type.",
+    "Sharing Dataset?": "The Roboflow and Pictor datasets are publicly available. The full combined dataset used is not shared.",
+    "Personal ideas or insights": "The flexibility to easily customize for different PPE types and industries is useful. Analyzing short video clips could improve reliability compared to single frames.",
+    "Funding": "Funded by the Science Fund of the Republic of Serbia, project ID 6524219 - AI4WorkplaceSafety."
+    }
