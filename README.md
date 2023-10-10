@@ -5,6 +5,11 @@ Welcome to the SciSift repository!🤗 With this repo, you can effortlessly extr
 
 SciSift is powered by a robust language model named Claude. This model can process documents containing up to 100,000 tokens, ensuring the efficient extraction of vital details. Such capacity enables us to read an entire paper in one go—something that is harder to do with ChatGPT.
 
+<p align="center">
+Imagine producing this nice table from several papers in a minute! </p>
+
+![output](newplot.png)
+</p>
 
 ## How to try SciSift? 
 
