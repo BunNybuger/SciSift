@@ -5,16 +5,14 @@
 
 </div>
 
-
 Welcome to the SciSift repository!🤗 With this repo, you can effortlessly extract information from papers—even directly from PDFs—and save it in your desired format, be it JSON, markmap, HTML, etc. Simply dump a collection of PDF papers and retrieve JSON files for each. Then, utilize the provided code to merge these JSON files, producing a comprehensive table with all the extracted details from your papers! I've tested SciSift on dozens of papers that I previously read and synthesized manually. The results? Absolutely remarkable. In a few seconds, SciSift extracts information, perhaps even better than I could!
 
 SciSift is powered by a robust language model named Claude. This model can process documents containing up to 100,000 tokens, ensuring the efficient extraction of vital details. Such capacity enables us to read an entire paper in one go—something that is harder to do with ChatGPT.
 
-<figure align="center">
-    <img src="newplot.png"
-         alt="output">
-    <figcaption>Imagine producing this nice table from several papers in a minute!</figcaption>
-</figure>
+<p align="center">
+Imagine producing this nice table from several papers in a minute! </p>
+
+![output](newplot.png)
 
 ## How to try SciSift? 
 
