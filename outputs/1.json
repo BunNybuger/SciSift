@@ -1,0 +1,25 @@
+{
+    "Article name": "Learning accurate personal protective equipment detection from virtual worlds",
+    "Citation": "(Di Benedetto et al., 2021)", 
+    "Year of the article": 2021,
+    "DOI": "10.1007/s11042-020-09597-9",
+    "Brief summary": "The paper proposes using photo-realistic synthetic images generated from a game engine to train deep learning models for detecting personal protective equipment (PPE). The models are then adapted to real-world images using a small set of real images. The approach is shown to be effective for PPE detection applications where limited real training data is available.",
+    "What is detected in this paper?": "Personal protective equipment like helmets, welding masks, ear protection, high visibility vests", 
+    "Detected object hashtag": {
+      "PPE": ["Helmet", "Welding Mask", "Ear Protection", "High-Visibility Vest"],
+      "Actions": [],
+      "Body posture": []
+    },
+    "Method and the technology employed in the paper for detection": "YOLO v3 and Faster R-CNN deep learning models trained on synthetic images from Grand Theft Auto V game engine and adapted to real images.",
+    "Primary focus": "#vision",
+    "Other technologies or tools used": ["Grand Theft Auto V game engine", "RAGE plugin"],
+    "Method of measuring performance": "Mean average precision (mAP)",
+    "Achieved performance": "76.1% mAP with YOLOv3, 77.1% mAP with Faster R-CNN after adaptation",
+    "Key points and the value of the research": "Shows effectiveness of using synthetic training data from game engines for training deep learning models when real training data is limited. Adaptation to real images with small real dataset is effective.",
+    "Suggestions or recommendations for future research": "Use more advanced domain adaptation techniques to better adapt models from synthetic to real images.",
+    "Limitations": "Many more variations in real images of some classes like heads and welding masks compared to synthetic images.",
+    "Dataset": "Synthetic dataset of 126,900 images generated from Grand Theft Auto V game engine. Real-world test set of 180 images.",
+    "Sharing Dataset?": "Yes, datasets made publicly available",
+    "Personal ideas or insights": "Interesting approach for training deep learning models when labelled real data is scarce. Game engines seem to provide a viable synthetic data source.",
+    "Funding": "Partially supported by CUP CIPE D55F17000290009 and AI4EU project funded by EC (H2020 - Contract n. 825619)"
+}

@@ -1,0 +1,25 @@
+{
+    "Article name": "Context-aware safety assessment system for far-field monitoring",
+    "Citation": "(Chern et al., 2023)",  
+    "Year of the article": 2023,
+    "DOI": "https://doi.org/10.1016/j.autcon.2023.104779",
+    "Brief summary": "The paper proposes a context-aware safety monitoring system to assess workers' safety compliance in far-field construction site monitoring. It uses object detection, semantic segmentation and depth estimation models to distinguish workers at height vs on ground. This allows applying different PPE rules based on working context to reduce false alarms. Two approaches are tested using depth estimation and extended segmentation. The extended segmentation approach performed better in experiments.",
+    "What is detected in this paper?": "Workers, PPE (hardhats, harnesses, straps, hooks), working context (height vs ground)",
+    "Detected object hashtag": {
+      "PPE": ["hardhats", "harnesses", "straps", "hooks"],
+      "Actions": [],
+      "Body posture": []
+    },
+    "Method and the technology employed in the paper for detection": "Object detection (YOLOv5), semantic segmentation (FPN), and depth estimation (pre-trained model by Alhashim and Wonka 2018) are used. The models are trained on the YUD-COSAv2 dataset collected from real construction sites.",
+    "Primary focus": "#vision",
+    "Other technologies or tools used": ["OpenCV", "PyTorch"],
+    "Method of measuring performance": "For object detection: mAP@0.5. For semantic segmentation: mIoU. For safety classification: Precision, Recall, F1-score.", 
+    "Achieved performance": "mAP of 85.3% for YOLOv5. mIoU of 75.74% for FPN. F1-score of 95.07% for safety classification using extended segmentation.",
+    "Key points and the value of the research": "Proposes a context-aware safety monitoring system using computer vision models. Demonstrates distinguishing workers' context is important to reduce false alarms. Compares two approaches using depth estimation and extended segmentation labels. The modular system design allows replacing each module.",
+    "Suggestions or recommendations for future research": "Fine-tune depth estimation model with construction site data. Use advanced training techniques to improve small object detection. Integrate detection and segmentation into a single pipeline.",
+    "Limitations": "Depth estimation performance is not ideal without construction site data. Independent detection and segmentation pipelines require more computation. Small object detection performance is lower than large objects.",
+    "Dataset": "YUD-COSAv2 collected from real construction sites. It contains 1089 images with annotations for object detection and semantic segmentation.",
+    "Sharing Dataset?": "Available upon request",
+    "Personal ideas or insights": "The idea of using explicit height labels in segmentation is interesting. The modular design allows customizing the system for different applications.",
+    "Funding": "National R&D Project for Smart Construction Technology, Korea Agency for Infrastructure Technology Advancement"  
+  }

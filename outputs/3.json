@@ -1,0 +1,44 @@
+{
+    "Article name": "Automatic Construction Hazard Identification Integrating On-Site Scene Graphs with Information Extraction in Outfield Test",
+    
+    "Citation": "Liu, X., Jing, X., Zhu, Q., Du, W., & Wang, X. (2023). Automatic Construction Hazard Identification Integrating On-Site Scene Graphs with Information Extraction in Outfield Test. Buildings, 13(2), 377. https://doi.org/10.3390/buildings13020377",
+    
+    "Year of the article": 2023,
+    
+    "DOI": "https://doi.org/10.3390/buildings13020377",
+    
+    "Brief summary": "The paper proposes a framework to automatically identify construction hazards by integrating on-site scene graph generation and BERT-based information extraction from safety regulations text. The information extraction model extracts key textual relational triples from regulations. The scene graph model detects visual relations between objects in images. By matching the textual and visual relational triples, the framework can conduct automatic safety checking and hazard identification.",
+    
+    "What is detected in this paper?": "The paper detects interactions between construction workers, personal protective equipment (PPE), and other objects in images of construction sites.",
+    
+    "Detected object hashtag": {
+    "PPE": ["hard hats", "eye protection", "hand protection", "face protection"],
+    "Actions": ["wearing", "holding", "standing", "performing operations"],
+    "Body posture": []
+    },
+    
+    "Method and the technology employed in the paper for detection": "The paper uses a BERT-based model for information extraction from text and a CNN-based model for scene graph generation from images. The BERT model extracts key entities and relations from safety regulation text. The scene graph model uses Mask R-CNN for object detection and a separate CNN branch for relation detection.",
+    
+    "Primary focus": "#vision",
+    
+    "Other technologies or tools used": ["fastText for word embeddings", "LabelImg and PySimpleGUI for image annotation"],
+    
+    "Method of measuring performance": "For information extraction: precision, recall, F1 score. For scene graph generation: average precision, recall@K.",
+    
+    "Achieved performance": "79.3% F1 score for information extraction. 50.7% Recall@20 for scene graph generation.",
+    
+    "Key points and the value of the research": "The key points are: 1) Extracts both visual and textual relational information for construction safety inspection. 2) Integrates NLP and computer vision methods. 3) Enables automatic safety checking by matching textual and visual relations. The value is providing an automated way to identify hazards by understanding construction scenes and regulations.",
+    
+    "Suggestions or recommendations for future research": "Expand the dataset size and types of hazards covered. Consider spatial relations and human pose estimation in scene graph generation. Build a construction knowledge graph for hazard prediction.",
+    
+    "Limitations": "Small dataset size. Limited types of relations detected in images.",
+    
+    "Dataset": "Self-built datasets for Chinese safety regulations text and construction site images with annotations.",
+    
+    "Sharing Dataset?": "Not specified",
+    
+    "Personal ideas or insights": "The integration of NLP and computer vision is promising for automating compliance checking and safety inspections. More complex reasoning with knowledge graphs could enable a 'virtual safety inspector'.",
+    
+    "Funding": "Partially funded by Aerospace Hongka Intelligent Technology (Beijing) CO., LTD."
+    
+    }

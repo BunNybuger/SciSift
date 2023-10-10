@@ -1,0 +1,25 @@
+{
+    "Article name": "A Safety System based on Bluetooth Low Energy (BLE) to prevent the misuse of Personal Protection Equipment (PPE) in construction",
+    "Citation": "(Gómez-de-Gabriel et al., 2022)", 
+    "Year of the article": 2022,
+    "DOI": "https://doi.org/10.1016/j.ssci.2022.105995",
+    "Brief summary": "The paper proposes a system to monitor the use of personal protective equipment (PPE) like earmuffs in construction sites. It uses multiple Bluetooth Low Energy (BLE) beacons on the PPE and a receiver on the tool to estimate distance between worker and tool. If distance is unsafe or PPE is not worn properly, the system can turn off tool power to prevent injury.",
+    "What is detected in this paper?": "Use of PPE (earmuff), Distance between worker and tool",
+    "Detected object hashtag": {
+      "PPE": "Earmuff",
+      "Actions": "", 
+      "Body posture": ""
+    },
+    "Method and the technology employed in the paper for detection": "Multiple BLE beacons placed orthogonally on PPE, RSSI signals received by tool, Extended Kalman Filter and Bayesian filtering to estimate distance",
+    "Primary focus": "#vision",
+    "Other technologies or tools used": "Microcontroller, Light sensor",
+    "Method of measuring performance": "Compared estimated distance to ground truth measurements",  
+    "Achieved performance": "Expected error around 20 cm",
+    "Key points and the value of the research": "Low cost system to monitor PPE use and worker-tool distance. Can actively turn off tool power instead of just warning. Robust to noise due to multiple orthogonal BLE beacons.",
+    "Suggestions or recommendations for future research": "Self-configuring methods for accurate distance estimation without pre-mapping. Real-time adaptation of beacon models.",
+    "Limitations": "Requires modeling phase for each BLE transmitter. Materials absorbing radio waves could distort estimates.", 
+    "Dataset": "Collected own dataset. Did not share dataset.",
+    "Sharing Dataset?": "No",
+    "Personal ideas or insights": "Interesting use of multiple low-cost BLE beacons for safety monitoring. Active risk mitigation is valuable. Approach seems flexible for many applications.",
+    "Funding": "Plan Propio-Universidad de Málaga" 
+  }
