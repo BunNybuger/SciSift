@@ -18,6 +18,8 @@ Imagine producing this nice table from several papers in a minute! </p>
 
 Currently, the easiest method is through this link: [poe.com/SciSift](https://poe.com/SciSift). Simply click on the link and upload your paper! Please note that only the first few attempts are free. Sorry! This is Poe's policy, not mine.
 
+You will be able to produce a separate JSON file extracted from each paper using SciSift. Then, use the provided snippet in [Combine_Json_2_csv.ipynb](Combine_Json_2_csv.ipynb) to create a CSV file with all the information combined. You can view it in the format shown above or any other output file.
+
 If you have an account with Claude, you can also run it directly on [claude.ai](http://claude.ai). However, you'll need to copy the prompt yourself.
 
 ## Background
