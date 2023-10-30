@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="20%" src="1.png">
+    <img width="25%" src="1.png">
 </p>
 
 # [SciSift](http://poe.com/SciSift "Click here to try SciSift!")
