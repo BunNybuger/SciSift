@@ -1,9 +1,8 @@
-<div style="display: flex; align-items: center;">
-<img src="1.png" width="150" height="150">         
+<p align="center" width="100%">
+    <img width="20%" src="1.png">
+</p>
 
 # [SciSift](http://poe.com/SciSift "Click here to try SciSift!")
-
-</div>
 
 Welcome to the SciSift repository!🤗 With this repo, you can effortlessly extract information from papers—even directly from PDFs—and save it in your desired format, be it JSON, markmap, HTML, etc. Simply dump a collection of PDF papers and retrieve JSON files for each. Then, utilize the provided code to merge these JSON files, producing a comprehensive table with all the extracted details from your papers! I've tested SciSift on dozens of papers that I previously read and synthesized manually. The results? Absolutely remarkable. In a few seconds, SciSift extracts information, perhaps even better than I could!
 
